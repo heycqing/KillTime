@@ -7,7 +7,7 @@
     "//": "来自cqing的代码检查",
     "test": "mocha tests/*",
     "lint-js-init": "eslint --init",
-    "lint-js": "eslint '**/*.js' ",
+    "lint-js": "eslint '**/*.js'  --fix ",
     "lint-css": "stylelint '**/*.sass' ",
     "lint-json": "jsonlint --quiet **/*.json",
     "lint-markdown": "markdownlint --config .markdownlint.json *.md",
