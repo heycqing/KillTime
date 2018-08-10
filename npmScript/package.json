@@ -1,24 +1,26 @@
 {
-  "name": "npmscript",
+  "name": "font-end-cqing",
   "version": "1.0.0",
-  "description": "first npm script ",
+  "description": "这是cqing的一个前端工程化的一个package配置",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/",
-    "lint-js-init":"eslint --init",
-    "lint-js": "eslint test/*.js",
-    "lin-css": "stylelint *.sass",
-    "lint-json": "jsonlint --quiet *.json",
+    "//": "来自cqing的代码检查",
+    "test": "mocha tests/*",
+    "lint-js-init": "eslint --init",
+    "lint-js": "eslint '**/*.js' ",
+    "lint-css": "stylelint '**/*.sass' ",
+    "lint-json": "jsonlint --quiet **/*.json",
     "lint-markdown": "markdownlint --config .markdownlint.json *.md",
-    "test1":"npm run lint-js& npm run lint-json  & wait"
+    "test1": "npm run lint-js & npm run lint-json  & wait"
   },
   "author": "cqing <SiqingIII@163.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "eslint": "^5.3.0",
     "jsonlint": "^1.6.3",
     "markdownlint-cli": "^0.12.0",
     "mocha": "^5.2.0",
-    "stylelint": "^9.4.0"
+    "stylelint": "^9.4.0",
+    "stylelint-config-standard": "^18.2.0"
   }
 }
