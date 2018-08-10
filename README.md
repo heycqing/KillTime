@@ -27,3 +27,8 @@
 - `npm run lint-js & npm run lint-css` 这种可以并行运行
 - `npm run lint-js & npm run lint-css & wait` 这种就可以使用在当某一插件处于监控的时候就可以不需等待进行；
 - 使用插件 `npm-run-all` 插件，
+
+### eslint 是真的烦，依据自己的使用规范选择相对应的rules
+
+我是没什么规范的，所以只能在自己的代码的实践，形成自己的风格。
+但是在大公司里很多都是有规范的，只能去适应这些规范。
