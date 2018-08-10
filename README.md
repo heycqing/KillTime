@@ -22,3 +22,8 @@
 - `jsonlint`，json 文件语法检查，踩过坑的同学会清楚，json 文件语法错误会知道导致各种失败；
 - `markdownlint-cli`，Markdown 文件最佳实践检查，个人偏好；...
 
+### 几种多种方式的并行命令
+- `npm run lint-js && npm run lint-css` 这种是需要按照顺序执行，第一步失败后其他也会错误；
+- `npm run lint-js & npm run lint-css` 这种可以并行运行
+- `npm run lint-js & npm run lint-css & wait` 这种就可以使用在当某一插件处于监控的时候就可以不需等待进行；
+- 使用插件 `npm-run-all` 插件，

@@ -9,7 +9,7 @@
     "lin-css": "stylelint *.sass",
     "lint-json": "jsonlint --quiet *.json",
     "lint-markdown": "markdownlint --config .markdownlint.json *.md",
-    "test1":"npm run lint-js && npm run lint-css && npm run lint-json && npm run lint-markdown"
+    "test1":"npm run lint-js& npm run lint-json  & wait"
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "ISC",
