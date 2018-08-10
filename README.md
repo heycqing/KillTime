@@ -16,3 +16,9 @@
 例如：`npm run test`
 就是 npm在package.json配置中搜索 `script` 脚本中配置的命令；
 
+### 前端工程流中的基本代码检查插件
+- `eslint`，可定制的 js 代码检查，1.1 中有详细的配置步骤；
+- `stylelint`，可定制的样式文件检查，支持 css、less、scss；
+- `jsonlint`，json 文件语法检查，踩过坑的同学会清楚，json 文件语法错误会知道导致各种失败；
+- `markdownlint-cli`，Markdown 文件最佳实践检查，个人偏好；...
+
