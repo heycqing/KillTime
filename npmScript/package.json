@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/",
-    "lint-js": "eslint *.js",
+    "lint-js-init":"eslint --init",
+    "lint-js": "eslint test/*.js",
     "lin-css": "stylelint *.sass",
     "lint-json": "jsonlint --quiet *.json",
     "lint-markdown": "markdownlint --config .markdownlint.json *.md",

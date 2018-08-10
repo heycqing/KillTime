@@ -1,1 +1,1 @@
-consolle.log('wtwt')
+console.log('wtwt');
