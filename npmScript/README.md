@@ -12,6 +12,14 @@
 
 ### 关于在写的过程中的问题都写在了issues中，欢迎commit和star 💯
 
+### 主要的点 and 一些感悟感受
+- npm script 主要有一个插件库和一个配置表组成，有配置库锁定所使用的插件。
+- 有想到一些调侃，说，javascript做出来的成品主要是有一个个插件搭建而成。
+
+- 当你去搭建一个前端工程时，其实就是使用各种module 插件搭建而成。
+`例如当前的使用npm script 搭建而成的前端工程， 相对于其他的搭建工具，例如webpack、pracle等等，其内部使用的是封装好的功能，而在其中的package.json就是充当着一个插件依赖下载的过程。`
+
+
 ### 起源
 其实在参加完 深圳的本固枝荣 前端会议之后，感觉整个流程都在说 前端工程化，
 一直都有一个愿望去实现一个自己的前端工程流，有看过package.json的标准官网，但是由于自身的一些问题，
@@ -42,4 +50,10 @@
 我是没什么规范的，所以只能在自己的代码的实践，形成自己的风格。
 但是在大公司里很多都是有规范的，只能去适应这些规范。
 
+
 ### stylelint 检查css样式 需要的事项有写在issues 中
+
+### 插件的相关链接
+- `eslint` 使用文档，中英文
+1. [eslint 中文文档](http://eslint.cn/docs/user-guide/configuring)
+2. [eslint 英文文档](https://eslint.org/docs/user-guide/command-line-interface)

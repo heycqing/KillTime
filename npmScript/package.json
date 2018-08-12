@@ -4,14 +4,17 @@
   "description": "这是cqing的一个前端工程化的一个package配置",
   "main": "index.js",
   "scripts": {
-    "//": "来自cqing的代码检查",
     "test": "mocha tests/*",
-    "lint-js-init": "eslint --init",
-    "lint-js": "eslint '**/*.js'  --fix ",
+    "lint-js": " #eslint的使用，使用fix自动补全，有bug记得修改喔！\n eslint '**/*.js'  --fix ",
+    
     "lint-css": "stylelint '**/*.sass' ",
+
+    
     "lint-json": "jsonlint --quiet **/*.json",
     "lint-markdown": "markdownlint --config .markdownlint.json *.md",
-    "test1": "npm run lint-js & npm run lint-json  & wait"
+
+    "test1": "npm run lint-js & npm run lint-json  & wait",
+    "lint-js-log": "npm run lint-js -d"
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "MIT",
