@@ -9,7 +9,10 @@
     "lint-js": " # 🔦 eslint 检查代码！\n eslint 'static/**/*.js'  --fix ",
     "lint-css": "# 🔦  stylelint 检查代码！\n stylelint static/**/*.scss ",
     "lint-json": "# 🔦 jsonlint 检查代码！\n jsonlint --quiet **/*.json",
-    "lint": "npm-run-all --parallel lint-* "
+    "lint": "npm-run-all --parallel lint-* ",
+    "cover":"nyc --reporte=html npm test",
+    "percover":"rm -rf cover coverage",
+    "postcover":"rm -rf .nyc_output && opn coverage/index.html"
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "MIT",
@@ -21,6 +24,8 @@
     "markdownlint-cli": "^0.12.0",
     "mocha": "^5.2.0",
     "npm-run-all": "^4.1.3",
+    "nyc": "^12.0.2",
+    "opn-cli": "^3.1.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "stylelint": "^9.4.0",
