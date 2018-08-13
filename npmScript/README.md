@@ -55,7 +55,9 @@
 
 ### 插件的相关链接
 - `npm script的使用指南`
-1. [npm script的使用指南s](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
+1. [npm script的使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 - `eslint` 使用文档，中英文
 1. [eslint 中文文档](http://eslint.cn/docs/user-guide/configuring)
 2. [eslint 英文文档](https://eslint.org/docs/user-guide/command-line-interface)
+- `stylelint`规则
+1. [stylelint 的规则大全](https://stylelint.io/user-guide/rules/)

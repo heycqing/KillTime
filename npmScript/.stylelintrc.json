@@ -1,0 +1,64 @@
+{
+  "root": true,
+  "rules": {
+    "color-no-invalid-hex": true,
+    "font-family-name-quotes": "always-where-recommended",
+    "function-blacklist": [
+      "calc"
+    ],
+    "function-name-case": "lower",
+    "property-no-vendor-prefix": true,
+    "declaration-block-no-duplicate-properties": [
+      true,
+      {
+        "ignore": [
+          "consecutive-duplicates-with-different-values"
+        ]
+      }
+    ],
+    "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-trailing-semicolon": "always",
+    "block-closing-brace-newline-after": "always",
+    "block-opening-brace-newline-after": "always",
+    "block-no-empty": true,
+    "selector-max-compound-selectors": 5,
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute",
+          "class"
+        ]
+      }
+    ],
+    "selector-no-vendor-prefix": true,
+    "selector-pseudo-class-no-unknown": true,
+    "selector-type-case": "lower",
+    "selector-type-no-unknown": true,
+    "selector-max-empty-lines": 0,
+    "selector-list-comma-newline-after": "always",
+    "media-feature-name-no-vendor-prefix": true,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "each",
+          "else",
+          "extend",
+          "for",
+          "function",
+          "if",
+          "include",
+          "mixin",
+          "return",
+          "while"
+        ]
+      }
+    ],
+    "at-rule-no-vendor-prefix": true,
+    "max-empty-lines": 2,
+    "no-duplicate-selectors": true,
+    "no-extra-semicolons": true,
+    "no-unknown-animations": true
+  }
+}

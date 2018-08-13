@@ -5,13 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/*",
-    "lint-js": " #eslint的使用，使用fix自动补全，有bug记得修改喔！\n eslint '**/*.js'  --fix ",
-    "lint-css": "stylelint 'test/*.sass' ",
-    "lint-json": "jsonlint --quiet **/*.json",
-    "lint": "npm-run-all --parallel lint-*",
-    "test1": "npm run lint-js & npm run lint-json  & wait",
-    "lint-js-log": "npm run lint-js -d",
-    "lint-init":"eslint --init"
+    "lint-js": " # 🔦 eslint 检查代码！\n eslint '**/*.js'  --fix ",
+    "lint-css": "# 🔦  stylelint 检查代码！\n stylelint **/*.scss ",
+    "lint-json": "# 🔦 jsonlint 检查代码！\n jsonlint --quiet **/*.json",
+    "lint": "npm-run-all --parallel lint-* "
+
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "MIT",
