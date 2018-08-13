@@ -54,6 +54,8 @@
 ### stylelint 检查css样式 需要的事项有写在issues 中
 
 ### 插件的相关链接
+- `npm script的使用指南`
+1. [npm script的使用指南s](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
 - `eslint` 使用文档，中英文
 1. [eslint 中文文档](http://eslint.cn/docs/user-guide/configuring)
 2. [eslint 英文文档](https://eslint.org/docs/user-guide/command-line-interface)
