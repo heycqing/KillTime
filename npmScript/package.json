@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/*",
+    "pretest":"npm run lint",
+
     "lint-js": " # 🔦 eslint 检查代码！\n eslint '**/*.js'  --fix ",
     "lint-css": "# 🔦  stylelint 检查代码！\n stylelint **/*.scss ",
     "lint-json": "# 🔦 jsonlint 检查代码！\n jsonlint --quiet **/*.json",
