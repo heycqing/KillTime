@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "这是cqing的一个前端工程化的一个package配置",
   "main": "index.js",
+  "config":{
+    "port":3000
+  },
   "scripts": {
     "test": "mocha tests/**/*.js",
     "pretest": "npm run lint",
@@ -10,9 +13,13 @@
     "lint-css": "# 🔦  stylelint 检查代码！\n stylelint static/**/*.scss ",
     "lint-json": "# 🔦 jsonlint 检查代码！\n jsonlint --quiet **/*.json",
     "lint": "npm-run-all --parallel lint-* ",
-    "cover":"nyc --reporte=html npm test",
-    "percover":"rm -rf cover coverage",
-    "postcover":"rm -rf .nyc_output && opn coverage/index.html"
+    "cover-serve": "http-server coverage_archive/$npm_package_version -p $npm_package_config_port",
+    "bower-open":"open http://localhost:$npm_package_config_port",
+
+    "cover": "nyc --reporter=html npm test",
+    "cover-clear": "rm -rf coverage && rm -rf .nyc_output",
+    "cover-arvhive": "mkdir -p coverage_archive/$npm_package_version && cp -r coverage/* coverage_archive/$npm_package_version",
+    "postcover": "npm-run-all cover-arvhive cover-clear --parallel cover-serve bower-open"
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "MIT",
@@ -20,6 +27,7 @@
     "chai": "^4.1.2",
     "css-loader": "^1.0.0",
     "eslint": "^5.3.0",
+    "http-server": "^0.11.1",
     "jsonlint": "^1.6.3",
     "markdownlint-cli": "^0.12.0",
     "mocha": "^5.2.0",

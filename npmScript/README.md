@@ -64,6 +64,10 @@
 1. `pre`  先于命令之前运行；<br>
 2. `post` 后于命令运行；
 
+### 或者环境变量
+
+` npm run env | grep npm_package | sort` 分类获取；
+
 
 
 ### 插件的相关链接
