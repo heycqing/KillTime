@@ -9,10 +9,11 @@
   "scripts": {
     "test": "mocha tests/**/*.js",
     "pretest": "npm run lint",
-    "lint-js": " # 🔦 eslint 检查代码！\n eslint 'static/**/*.js'  --fix ",
-    "lint-css": "# 🔦  stylelint 检查代码！\n stylelint static/**/*.scss ",
-    "lint-json": "# 🔦 jsonlint 检查代码！\n jsonlint --quiet **/*.json",
+    "lint-js": "eslint 'static/**/*.js'  --fix ",
+    "lint-css": "stylelint static/**/*.scss ",
+    "lint-json": "jsonlint --quiet **/*.json",
     "lint": "npm-run-all --parallel lint-* ",
+    
     "cover-serve": "http-server coverage_archive/$npm_package_version -p $npm_package_config_port",
     "bower-open":"open http://localhost:$npm_package_config_port",
 
