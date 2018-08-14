@@ -84,6 +84,10 @@
 
 ### 实现自动刷新
 - `livereload` npm插件
+- `browser-sync` npm插件
+
+### 概述
+- `master` 差不多结束了，准备另起分支；
 
 ### 插件的相关链接
 - `npm script的使用指南`
