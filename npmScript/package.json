@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha tests/**/*.js",
+    "watch:test":"npm t --  --watch",
     "cover":"node scripts/cover.js",
     "cover:serve": "scripty",
     "cover:open": "scripty"
