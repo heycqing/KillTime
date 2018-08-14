@@ -8,20 +8,9 @@
   },
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha tests/**/*.js",
-    "pretest": "npm run lint",
-    "lint-js": "eslint 'static/**/*.js'  --fix ",
-    "lint-css": "stylelint static/**/*.scss ",
-    "lint-json": "jsonlint --quiet **/*.json",
-    "lint": "npm-run-all --parallel lint-* ",
-
-    "cover-serve": "cross-var \"http-server coverage_archive/$npm_package_version -p $npm_package_config_port\"",
-    "bower-open": "cross-var \"open http://localhost:$npm_package_config_port\"",
-
-    "cover": "nyc --reporter=html npm test",
-    "cover-clear": "rimraf coverage && rimraf .nyc_output",
-    "cover-arvhive": "cross-var \"mkdir -p coverage_archive/$npm_package_version && cp -r coverage/* coverage_archive/$npm_package_version\"",
-
-    "postcover": "npm-run-all cover-arvhive cover-clear --parallel cover-serve bower-open"
+    "cover":"scripty",
+    "cover-serve":"scripty",
+    "cover-open":"scripty"
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "MIT",
@@ -39,9 +28,11 @@
     "mocha": "^5.2.0",
     "npm-run-all": "^4.1.3",
     "nyc": "^12.0.2",
+    "opn": "^5.3.0",
     "opn-cli": "^3.1.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
+    "scripty": "^1.7.2",
     "style-loader": "^0.22.1",
     "stylelint": "^9.4.0",
     "stylelint-config-standard": "^18.2.0"
