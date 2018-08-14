@@ -13,4 +13,4 @@ mkdir('-p','coverage_archive/$npm_package_version ');
 cp('-r','coverage/*','coverage_archive/$npm_package_version');
 
 console.log(chalk.green('4. open coverage report for preview...'));
-exec('npm-run-all --parallel cover-serve cover-open');
+exec('npm-run-all --parallel cover:serve cover:open');
