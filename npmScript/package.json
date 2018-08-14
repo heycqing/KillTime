@@ -3,38 +3,44 @@
   "version": "1.0.0",
   "description": "这是cqing的一个前端工程化的一个package配置",
   "main": "index.js",
-  "config":{
-    "port":3000
+  "config": {
+    "port": 3000
   },
   "scripts": {
-    "test": "mocha tests/**/*.js",
+    "test": "cross-env NODE_ENV=test mocha tests/**/*.js",
     "pretest": "npm run lint",
     "lint-js": "eslint 'static/**/*.js'  --fix ",
     "lint-css": "stylelint static/**/*.scss ",
     "lint-json": "jsonlint --quiet **/*.json",
     "lint": "npm-run-all --parallel lint-* ",
-    
-    "cover-serve": "http-server coverage_archive/$npm_package_version -p $npm_package_config_port",
-    "bower-open":"open http://localhost:$npm_package_config_port",
+
+    "cover-serve": "cross-var \"http-server coverage_archive/$npm_package_version -p $npm_package_config_port\"",
+    "bower-open": "cross-var \"open http://localhost:$npm_package_config_port\"",
 
     "cover": "nyc --reporter=html npm test",
-    "cover-clear": "rm -rf coverage && rm -rf .nyc_output",
-    "cover-arvhive": "mkdir -p coverage_archive/$npm_package_version && cp -r coverage/* coverage_archive/$npm_package_version",
+    "cover-clear": "rimraf coverage && rimraf .nyc_output",
+    "cover-arvhive": "cross-var \"mkdir -p coverage_archive/$npm_package_version && cp -r coverage/* coverage_archive/$npm_package_version\"",
+
     "postcover": "npm-run-all cover-arvhive cover-clear --parallel cover-serve bower-open"
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.2",
+    "cpr": "^3.0.1",
+    "cross-env": "^5.2.0",
+    "cross-var": "^1.1.0",
     "css-loader": "^1.0.0",
     "eslint": "^5.3.0",
     "http-server": "^0.11.1",
     "jsonlint": "^1.6.3",
+    "make-dir-cli": "^1.0.0",
     "markdownlint-cli": "^0.12.0",
     "mocha": "^5.2.0",
     "npm-run-all": "^4.1.3",
     "nyc": "^12.0.2",
     "opn-cli": "^3.1.0",
+    "rimraf": "^2.6.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "stylelint": "^9.4.0",

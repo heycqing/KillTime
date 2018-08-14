@@ -68,6 +68,9 @@
 
 ` npm run env | grep npm_package | sort` 分类获取；
 
+### 跨平台 兼容
+原理：这里是使用[npmjs.org](www.npmjs.org)里的各个包搭建<br>
+里面有很多跨平台的小工具来兼容不同操作系统；
 
 
 ### 插件的相关链接
