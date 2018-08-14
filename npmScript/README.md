@@ -68,6 +68,9 @@
 
 ` npm run env | grep npm_package | sort` 分类获取；
 
+### 实现服务在浏览器运行
+- 使用 `http-server` 这个npm包； 
+
 ### 跨平台 兼容
 原理：这里是使用[npmjs.org](www.npmjs.org)里的各个包搭建<br>
 里面有很多跨平台的小工具来兼容不同操作系统；
@@ -79,6 +82,9 @@
 自动化是我一直想做的事情，在 `深圳的本固枝荣` 之后，我一直都想做一下前端的工程化问题，最重要的是自动刷新问题。
 - 使用 `onchange` npm包;
 
+### 实现自动刷新
+- `livereload` npm插件
+
 ### 插件的相关链接
 - `npm script的使用指南`
 1. [npm script的使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
@@ -87,3 +93,5 @@
 2. [eslint 英文文档](https://eslint.org/docs/user-guide/command-line-interface)
 - `stylelint`规则
 1. [stylelint 的规则大全](https://stylelint.io/user-guide/rules/)
+- `browersync` 规则
+1. [browersync 规则](http://browsersync.cn/docs/command-line/)
