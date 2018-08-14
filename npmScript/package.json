@@ -12,14 +12,17 @@
     "lint": "scripty",
     "test": "cross-env NODE_ENV=test mocha tests/**/*.js",
     "watch:test": "npm t --  --watch",
-    "watch:lint": "onchange -i \"**/*.js\" \"**/*.scss\" \"**/*.html \"  -- npm run lint",
+    "watch:lint": "onchange -i \"client/**/*.js\" \"client/**/*.scss\" \"client/**/*.html \"  -- npm run lint",
     "watch": "npm-run-all --parallel watch:*",
     "cover": "node scripts/cover.js",
     "cover:serve": "scripty",
     "cover:open": "scripty",
+
     "client": "npm-run-all --parallel client:*",
-    "client:reload-server": "livereload page/",
-    "client:static-serve": "http-server static/"
+    "client:server":"http-server client/ ",
+    "client:reload-server": "livereload -w \"client/**/*.js\"  \"client/**/*.html\" \"client/**/*.scss\" \"client/**/*.css\"  -d",
+
+    "dev":"npm run lint && npm run client"
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "MIT",

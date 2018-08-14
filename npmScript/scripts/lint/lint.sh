@@ -1,8 +1,8 @@
 # 检查js文件
-eslint 'static/**/*.js' --fix
+eslint 'client/**/*.js' --fix
 
 # 检查样式文件
-stylelint 'static/**/*.js' --fix
+stylelint 'client/**/*.scss' --fix
 
 # 检查html文件
 
