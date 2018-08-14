@@ -1,5 +1,5 @@
 var addSorting = (function () {
-    "use strict";
+    'use strict';
     var cols,
         currentSort = {
             index: 0,
@@ -7,13 +7,13 @@ var addSorting = (function () {
         };
 
     // returns the summary table element
-    function getTable() { return document.querySelector('.coverage-summary'); }
+    function getTable() { return document.querySelector('.coverage-summary') }
     // returns the thead element of the summary table
-    function getTableHeader() { return getTable().querySelector('thead tr'); }
+    function getTableHeader() { return getTable().querySelector('thead tr') }
     // returns the tbody element of the summary table
-    function getTableBody() { return getTable().querySelector('tbody'); }
+    function getTableBody() { return getTable().querySelector('tbody') }
     // returns the th element for nth column
-    function getNthColumn(n) { return getTableHeader().querySelectorAll('th')[n]; }
+    function getNthColumn(n) { return getTableHeader().querySelectorAll('th')[n] }
 
     // loads all columns
     function loadColumns() {
