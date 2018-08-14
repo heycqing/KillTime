@@ -16,7 +16,10 @@
     "watch": "npm-run-all --parallel watch:*",
     "cover": "node scripts/cover.js",
     "cover:serve": "scripty",
-    "cover:open": "scripty"
+    "cover:open": "scripty",
+    "client": "npm-run-all --parallel client:*",
+    "client:reload-server": "livereload page/",
+    "client:static-serve": "http-server static/"
   },
   "author": "cqing <SiqingIII@163.com>",
   "license": "MIT",
@@ -31,6 +34,7 @@
     "http-server": "^0.11.1",
     "jsonlint": "^1.6.3",
     "liveload": "^0.3.3",
+    "livereload": "^0.7.0",
     "make-dir-cli": "^1.0.0",
     "markdownlint-cli": "^0.12.0",
     "mocha": "^5.2.0",
