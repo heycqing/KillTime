@@ -5,7 +5,7 @@ json -> `json with padding`
 
 ### 🛢 Q: jsonp原理是什么？
 ####   为什么jsonp能实现跨域？
-A：原理：由于 `<script>` 标签的 `src` 属性可以跨域引入外部不同的资源。
+A：原理：由于 `<script>` 标签的 `src` 属性可以跨域引入外部不同的资源，可以通过动态创建 `<script>` 标签来实现跨域
 
 ### 🛢 Q: jsonp的优缺点有哪些？
 A:

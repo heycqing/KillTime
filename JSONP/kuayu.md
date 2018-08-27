@@ -34,13 +34,17 @@ A:
 A: 
 - 不能获取 `DOM`;
 - 不能进行 `AJAX`;
-- 不能获取 `cookie` `seesion` 等本地存储；
+- 不能获取 `cookie` 、`LocalStorage` 和 `IndexDB`；
 
 ### 🛢 Q: 如何突破同源策略进行跨域？
 同样问题from QQ音乐：尽可能多举例说出跨域的方法？<br>
 A: 
-
-
+- jsonp 跨域
+- 跨域资源共享（`CORS`），简单来说就是后端设置控制头:<br>
+```php
+    Access-Control-Allow-Origin: xxx.com
+```
+- window.domain + iframe 
 
 
 
