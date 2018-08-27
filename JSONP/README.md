@@ -1,4 +1,6 @@
 ## 🐝 jsonp 一些知识点
+面了腾讯的QQ音乐回想起来的一些和 `jsonp` 相关的题目<br> 
+
 json -> `json with padding`
 
 ### 🛢 Q: jsonp原理是什么？
@@ -21,5 +23,40 @@ A:
 可以让后台直接设置允许特定域的请求 <br>
 设置：`Access-Contor-Allow-Origin: domian.com`
 
+### jsonp格式和json有什么不同？
+`json`
+- 主要是以 `[]` ,把 `key:"value"` 包括起来；
+- 又以 `{}` , 把 `[]` 这些集合集合起来；
+
+```js
+    // []例子；
+    var somebody =[
+        name:"xiaoming"
+    ]
+
+    // {}例子
+    var all ={
+        [
+            name:"xiaoming"
+        ]，
+        [
+            name:"xiaohong"
+        ]
+    }
+
+```
+
+`jsonp`
+- 主要是被 `callback` 函数包含起来的；
+
+```js
+    somebody({
+        name:"小明"s
+    })
+```
+
 #### 🖇 跨域其他知识点
 点击这里[跨域](./kuayu.md)
+
+##### 参考资料
+[json-jsonp-jquery](http://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html)
