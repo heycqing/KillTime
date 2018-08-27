@@ -47,7 +47,7 @@ A:
 ```
 
 `jsonp`
-- 主要是被 `callback` 函数包含起来的；
+- 主要是被 `callback` 函数包含起来的一个json化的相应；
 
 ```js
     somebody({
