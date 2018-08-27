@@ -1,5 +1,5 @@
 ## 🐝 jsonp 一些知识点
-面了腾讯的QQ音乐回想起来的一些和 `jsonp` 相关的题目<br> 
+面了腾讯的QQ音乐回想起来的一些和 `jsonp` 相关的题目<br> 
 
 json -> `json with padding`
 
