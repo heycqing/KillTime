@@ -58,5 +58,8 @@ A:
 #### 🖇 跨域其他知识点
 点击这里[跨域](./kuayu.md)
 
+#### 一些问题可以参考一下
+- [md文件的奇葩问题(内含md教程)](https://github.com/heycqing/KillTime/issues/6#issue-354244729)
+
 ##### 参考资料
 [json-jsonp-jquery](http://www.cnblogs.com/dowinning/archive/2012/04/19/json-jsonp-jquery.html)
