@@ -4,7 +4,7 @@
 💣 可以看看[我的博客](http://www.wusiqing.com)
 
 #### 汇总案例
-- 点击[index.html]()
+- 点击[index.html](https://github.com/heycqing/KillTime/index.html)
 
 ### 💻 Jsonp 注意点
 - 点击这里跳转[jsonp相关知识点](./JSONP/README.md)
