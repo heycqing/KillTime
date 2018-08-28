@@ -33,20 +33,23 @@ A:
 ### 🛢 Q: 同源策略限制了什么？
 A: 
 - 不能获取 `DOM`;
-- 不能进行 `AJAX`;
+- 不能发送 `AJAX` 请求;
 - 不能获取 `cookie` 、`LocalStorage` 和 `IndexDB`；
 
 ### 🛢 Q: 如何突破同源策略进行跨域？
 同样问题from QQ音乐：尽可能多举例说出跨域的方法？<br>
 A: 
-- jsonp 跨域
+- `jsonp 跨域`
 - 跨域资源共享（`CORS`），简单来说就是后端设置控制头:<br>
 ```php
     Access-Control-Allow-Origin: xxx.com
 ```
-- window.domain + iframe 
-
-
+- `webSocket` 原理：浏览器发出该协议的请求，服务器请求域名是否在白名单内，如果是就允许跨域通信;
+- `window.domain + iframe` 在同源的情况下，才能使用;
+- `window.name` 无论是否同源，只要在同一个窗口里，前一个网页设置了这个属性，后一个网页可以读取它;
+- `window.postMessage` HTMl5新出的跨文档API,允许跨窗口通信，无论是同源;
+- `window.location.hash` 片段标识符，`URL`后的 `#`的值修改，页面不会刷新，可以把信息写在 `#` 后传递;
+- 使用ngnix来做反向代理，原理是：浏览器请求同源服务器，后续请求操作再请求外部服务;
 
 
 
