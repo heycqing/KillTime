@@ -31,12 +31,13 @@
         var div1 = document.getElementsByClassName('div1')[0];
         var div2 = document.getElementsByClassName('div2')[0];
         div1.onclick = function(){
+            
             div1.style.backgroundColor = 'red';
-            alert('我只点击了div2,这里冒泡')
+            
+            // alert('我只点击了div2,这里冒泡')
         }
         div2.onclick = function(){
             div2.style.backgroundColor = '#329648'          
-            console.log('第一步')
         }
     </script>
 </body>

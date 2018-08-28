@@ -15,10 +15,50 @@
 
 ### 事件冒泡的运行过程已经写好在bubble.html页面
 - 点击跳转[bubble.html](./bubble.html);
- 
+
 ### 🛢 Q: 如何通过事件冒泡来实现一个需求?
 > A: 
 
+
+
+### 🛢 Q: 如何阻止事件冒泡？
+> A:
+- 阻止冒泡事件：
+    + 可以使用 `e.stopPropagation()`
+    + 兼容IE 使用 `e.cancelBubble = true`
+    ```js
+        <!-- 源于bubble.html的函数，可以参照 -->
+          div2.onclick = function(event){
+            var event = event || winodw.event;
+            if(event.stopPropagation){
+                event.stopPropagation()
+            }
+            if(evevnt.cancelBubble){
+                event.cancelBubble = true;
+            }
+            div2.style.backgroundColor = '#329648'          
+        }
+
+        <!-- 简易 -->
+        window.event?window.evevnt.cancelBubble=true : event.stopPropagetion();
+    ```
+- 阻止默认行为：
+    + 可以使用 `e.preventDefault()`;
+    + 兼容IE使用 `event.returnValue = false`
+    ```js
+        div2.onclick = function(e){
+            var e = e || window.event;
+            if(e.preventDefault){
+                e.preventDefault();
+            }
+            if(e.returnValue){
+                e.returnValue = false;
+            }
+            <!-- 如果只用 return false 只会阻止默认行为，不会停止冒泡 -->
+            return false;
+            div2.style.backgroundColor = '#329648'                      
+        }
+    ```
 
 
 
