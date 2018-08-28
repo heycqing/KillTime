@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冒泡事件</title>
+    <style>
+        .div1{
+            background: rgb(128, 185, 202);
+            height: 300px;
+            width: 300px;
+            margin: auto;
+        }
+        .div2{
+            background: rgb(148, 141, 141);
+            height: 200px;
+            width: 200px;
+            margin-left: 50px;
+            position: fixed;
+            right: 0;
+            top: 600px
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2"></div>
+    </div>
+    <script>
+        var div1 = document.getElementsByClassName('div1')[0];
+        var div2 = document.getElementsByClassName('div2')[0];
+        div1.onclick = function(){
+            div1.style.backgroundColor = 'red';
+            alert('我只点击了div2,这里冒泡')
+        }
+        div2.onclick = function(){
+            div2.style.backgroundColor = '#329648'          
+            console.log('第一步')
+        }
+    </script>
+</body>
+</html>
