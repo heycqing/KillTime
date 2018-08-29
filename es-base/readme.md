@@ -33,8 +33,7 @@
     b.push(4)
     console.log(obj, a, b) // {a:1,b:[1,2,3,4]} , 2 , [1,2,3,4]
 ```
-> 我总结了一句话:
-\n
+> 我总结了一句话 :  
 > 最后碰上传值的永远传值，碰上传址的永远在传值;
 
 ### 如何判断js数据类型？
@@ -56,9 +55,9 @@
 - `constructor`
     + 表达式： `[].constructor === array` (返回 `true`s 或者 `false` )
     + 是基于原型属性的 `prototype` 原理 
-    \n
+    
     > 所有的函数，都有一个prototype属性，属性值也是一个普通的对象
-    \n
+    
     + 注意： `null` `undefined` 是不会返回值的，因为他们表示 `无` ，没有属性;
 
 - `tostring` 用法
