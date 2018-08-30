@@ -109,12 +109,16 @@ for(var i = 0 ; i< li_.length; i++){
     + 使用动态创建 `script` 标签；
     + 使用 `script` 标签的属性值： `async="async" `,(无序执行，异步);
     + 使用 `script` 标签的属性值： `defer="defer" `,(按照顺序执行，异步);
-    + 使用 `eval()` 操作ajax返回的响应值： `eval(xmlhttp.responseText)`;
-    + 
+    + 使用 `eval()` 操作 `ajax` 返回的响应值： `eval(xmlhttp.responseText)`;
+    
+> `eval()`用来干什么的？（QQ音乐）
+- A:
+    + 可计算某个字符串，并执行其中的的 `JavaScript ` 代码。
+    + `eval()` 可以让写在函数里的代码运行在全局作用域中。
 
 
 
 ##### 参考链接
 - [判断JS数据类型的四种方法](https://www.cnblogs.com/onepixel/p/5126046.html)
 - [不得不说的JavaScript异步加载](https://www.cnblogs.com/zichi/p/4597766.html)
-- [异步加载JS脚本](https://www.jianshu.com/p/bf8b5bf5fc90)
+- [异步加载JS脚本s](https://www.jianshu.com/p/bf8b5bf5fc90)
