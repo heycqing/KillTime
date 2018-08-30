@@ -95,7 +95,11 @@ for(var i = 0 ; i< li_.length; i++){
 - 具体代码点击[js代码](./es-update/es-bibao.js)
 
 > 什么是闭包？
-- 闭包就是在一个函数里面调用另外一个函数，在被包含的函数形成一个作用域;
+- 闭包就是在一个函数里面调用另外一个函数，在被包含的函数形成一个作用域,可以调用包含闭包的函数的局部变量
+- 两个例子
+    + [code1-bibao](./es-update/code1-bibao.js)
+    + [code2-bibao](./es-update/code2-bibao.js)
+
 
 ##### 参考链接
 - [判断JS数据类型的四种方法](https://www.cnblogs.com/onepixel/p/5126046.html)
