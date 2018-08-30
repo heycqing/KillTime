@@ -65,9 +65,37 @@
     + 表达式： `Object.prototype.toString.call('') ;   // [object String]`
 
 
+###  js闭包运用
+> 题目：现在有个 HTML 片段，要求编写代码，点击编号为几的链接就alert弹出其编号
+- 这里需要使用闭包;
+**这是 `html` 代码**
+```html
+  <ul>
+        <li>no1</li>
+        <li>no2</li>
+        <li>no3</li>
+        <li>no4</li>
+    </ul>
+```
+**这是 `js` 代码**
 
+```js
+var li_ = document.getElementsByTagName('li')
 
+for(var i = 0 ; i< li_.length; i++){
+    li_[i].addEventListener('click',function(i){
+       return function(){
+            alert(i+0);
+            
+        }
+    }(i),true)
+}
+```
+- 具体代码点击[html代码](./es-update/es-bibao.html)
+- 具体代码点击[js代码](./es-update/es-bibao.js)
 
+> 什么是闭包？
+- 闭包就是在一个函数里面调用另外一个函数，在被包含的函数形成一个作用域;
 
 ##### 参考链接
 - [判断JS数据类型的四种方法](https://www.cnblogs.com/onepixel/p/5126046.html)
