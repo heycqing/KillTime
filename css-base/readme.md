@@ -37,3 +37,13 @@
 - `绝对定位元素`，可结合 `left` 和 `margin` 实现，但是必须知道 `尺寸`。
 - `绝对定位` 可结合 `transform` 实现居中。
 - `绝对定位` 结合 `margin: auto` ，不需要提前知道尺寸，兼容性好。
+
+### css盒子模型有几种？（拼多多）
+> 可以以元素宽度来分辨
+- 一种是` width= 内容宽度 + border + padding + margin` ,属于正常的，常见的一类；
+- 一种是元素属性为 `box-sizing:content-box` 的时候，当前元素宽度是 `width = 内容宽度`；
+- 一种是元素属性为 `box-sizing:border-box` 的时候，当前元素的宽度是 `width = 内容宽度 + padding + border`
+
+### 如何实现一个三角形？（拼多多）
+
+### 有了解 BCF 的原理吗？ （拼多多）
