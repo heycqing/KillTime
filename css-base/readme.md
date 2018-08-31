@@ -18,7 +18,9 @@
     + `absolute` 元素是根据最近的定位上下文确定位置，而 `fixed` 根据 `window `（或者 `iframe`）确定位置。
 
 > 这里的`最近定义上下文`是指 当使用了 `absolute` 的元素会向上级父元素一直寻找到有定义 `position:static/relative/absolute/fixed` 的元素，记得是元素，作为调整位置的依据。
->
+
+
+
 #### relative、absolute 和 fixed 分别依据谁来定位？
 > 正解：
 - `relative` 定位永远是相对于`元素自身位置`的，和其他元素没关系，也不会影响其他元素。
@@ -27,10 +29,14 @@
     + 浏览器会递归查找该元素的所有父元素，如果找到一个设置了 `position:relative/absolute/fixed` 的元素，就以`该元素为基准定位`，
     + 如果没找到，就以 `浏览器` 边界定位。
 
+
+
 ### 如何实现水平居中？
 - `inline` 元素直接使用 `text-algin`;
 - `block` 元素直接使用 `margin: auto;`;
 - `绝对定位` 元素可结合 `left` 和 `margin` 实现，但是必须知道宽度。
+
+
 
 ### 如何实现垂直居中？
 - `inline` 元素可设置 `line-height` 的值等于 `height` 值，如单行文字垂直居中;
@@ -38,12 +44,22 @@
 - `绝对定位` 可结合 `transform` 实现居中。
 - `绝对定位` 结合 `margin: auto` ，不需要提前知道尺寸，兼容性好。
 
+
+
+
 ### css盒子模型有几种？（拼多多）
 > 可以以元素宽度来分辨
 - 一种是` width= 内容宽度 + border + padding + margin` ,属于正常的，常见的一类；
 - 一种是元素属性为 `box-sizing:content-box` 的时候，当前元素宽度是 `width = 内容宽度`；
 - 一种是元素属性为 `box-sizing:border-box` 的时候，当前元素的宽度是 `width = 内容宽度 + padding + border`
 
+
+
 ### 如何实现一个三角形？（拼多多）
 
+
+
 ### 有了解 BCF 的原理吗？ （拼多多）
+- A:
+    + 什么是 `BFC` ?
+        + 
