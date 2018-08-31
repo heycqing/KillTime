@@ -19,7 +19,7 @@
     + `number`
 - 传址 变量是放在 `堆` 中； 
     + `object` ( `function` , `Array` , `RegExp` , `Date`)
-<br
+
 
 > 堆和栈的区别？(拼多多笔试题)
 
