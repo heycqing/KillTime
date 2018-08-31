@@ -30,5 +30,8 @@
 
 
 ### 移动开发经验
+- [奇冰科技有限公司的报名系统](https://1110qing.gitee.io/qibing/#/tab/choice1)
+    + 创建背景：这里是报名系统的 `v0.1.0` 版本，使用框架当时是 `Angular.js 1.x 版本` 的时候（写的时候是大二）
+    + 这里是报名系统的代码，之前是托管到 **码云** 上的，[报名系统源码](https://gitee.com/1110qing/qibing)
 - [KY饭局报名(此链接数据是测试数据)](http://www.wusiqing.com/yoker_/html/singUpHtml/index.html?openId=%27holle%27&&name=%27123%27)
     + 由于需要和后台数据库连接，生成海报的方法是经过需要获取 `URL` 中的参数来获取微信的 `openID` 和 表单填写的 `name`
