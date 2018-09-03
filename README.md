@@ -28,6 +28,9 @@
 ### 📝 有关css布局的一些知识
 - 点击这里跳转[css布局](./sides/readme.md)
 
+### 🖋 tencent前端模拟笔试题
+- 点击这里跳转[here](./moni-tencent/readme.mds)
+
 #### 温馨提示
 - ⭐️ `star` 是方便你收藏在你自己的收藏夹里，方便你来回顾一些你喜欢的、感兴趣的github仓库；
 - 👀 `watch` ，如果你 `watch` 了项目的话，只要项目提交了 `commit` 或者 `issues` 的话，你都会接收到通知；
