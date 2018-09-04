@@ -33,7 +33,7 @@
 6. 套接字（socket)
 
 - 参考链接[Linux进程间通信的几种方式总结](https://blog.csdn.net/gatieme/article/details/50908749)
-<br>
+
 > 答案是：all
 
 ## 03.jpeg （涉及操作系统设计）
