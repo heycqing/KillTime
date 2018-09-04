@@ -221,7 +221,7 @@ for(var i = 0 ; i< li_.length; i++){
 - 参考链接 [Understanding JavaScript Function Invocation and "this"](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)
 
 
-### 🍥 如何实现 javascript 的深拷贝？
+### 🚨 如何实现 javascript 的深拷贝？
 
 - `浅拷贝` ：`拷贝对象` 直接复制 `被拷贝对象` 的 `指针` ，**改变拷贝对象的属性值，会一并改变被拷贝对象的属性值**；
 - `深拷贝` ：`拷贝对象` 彻底复制 `整个旧对象`，**改变新对象的属性值，并不会对被拷贝对象产生影响**；
@@ -233,10 +233,42 @@ for(var i = 0 ; i< li_.length; i++){
 <br>
 (图片来自网络)
 
+> 实现深拷贝：
+
+- `遍历把被拷贝对象中的节点一一赋值给拷贝对象`
+
+```js
+   function copyTo(copyobj){
+        var newObj = {};
+        for(var i in copyobj){
+            newObj[i] = copyobj[i]
+        }
+        return newObj;
+    }
+```
+
+- `使用 JSON.parse 和 JSON.stringify 配合使用，先转为 json格式，再转为 对象`
+
+```js
+    var copyObj = {
+        x:1,
+        y:1
+    }
+    var newObj =  JSON.parse(JSON.stringify(copyObj))
+```
+
+- `当对象只有一层结构，并没有多层结构时，可以使用 Object.assign() 进行拷贝`
+
+```js
+    var copyObj = {
+        x:1,
+        y:1
+    }
+    var newObj = Object.assign({},copyObj)
+```
 
 
-
-
+> 判断是否是真的进行 `深拷贝` 的方法： 改变 `新对象的一些属性值` , 看是否会影响到 `被拷贝对象` 的值，如果不能改变 `被拷贝对象` 的属性值的话，就是深拷贝，否则，则是浅拷贝
 
 - 参考链接 [什么是js深拷贝和浅拷贝及其实现方式?](https://www.haorooms.com/post/js_copy_sq)
 
