@@ -270,8 +270,10 @@ for(var i = 0 ; i< li_.length; i++){
 
 > 判断是否是真的进行 `深拷贝` 的方法： 改变 `新对象的一些属性值` , 看是否会影响到 `被拷贝对象` 的值，如果不能改变 `被拷贝对象` 的属性值的话，就是深拷贝，否则，则是浅拷贝
 
-- 参考链接 [什么是js深拷贝和浅拷贝及其实现方式?](https://www.haorooms.com/post/js_copy_sq)
+<br>
 
+- 参考链接 [什么是js深拷贝和浅拷贝及其实现方式?](https://www.haorooms.com/post/js_copy_sq)
+- 参考链接 [ ES2015系列(二) 理解Object.assign](https://cnodejs.org/topic/56c49662db16d3343df34b13)
 
 
 
