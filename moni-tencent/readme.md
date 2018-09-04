@@ -98,9 +98,9 @@
 - 可见下表（详解）:
 
 ![image](./showImgs/threehand.png)
-
-> 中间是 `数据传输过程` ;
-
+<br>
+- 中间是 `数据传输过程` ;
+<br>
 ![image](./showImgs/four.png)
 
 > 图片来源于网络
