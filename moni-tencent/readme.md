@@ -72,6 +72,9 @@
     }
 ```
 
+- 个人可能觉得的答案在 [issues 7](https://github.com/heycqing/KillTime/issues/7) 中。
+- 欢迎解答和纠正 🐾 
+
 ## 04.jpeg (涉及网络协议)
 > Q:DNS是应用层协议，应用了哪些传输层协议
 
