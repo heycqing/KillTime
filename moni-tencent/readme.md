@@ -97,11 +97,11 @@
 - A:
 - 可见下表（详解）:
 <br>
-![image](./showImgs/3次握手)
+![image](./showImgs/3次握手.png)
 <br>
 > 中间是 `数据传输过程` ;
 <br>
-![image](./showImgs/4次挥手)
+![image](./showImgs/4次挥手.png)
 <br>
 > 图片来源于网络
 
