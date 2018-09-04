@@ -127,6 +127,79 @@ for(var i = 0 ; i< li_.length; i++){
 
 
 
+
+#### this的在javascript中的指向
+- A:
+> 有4种情况关于 `this` 的走向；
+
+- `在函数里面的this` --->  指向 `全局变量`;
+> 例子：
+
+```js
+    function funcA(a){
+        this.a =a;
+    }
+    funcA(1)
+    console.log(a) // 1
+```
+
+<br>
+
+- 代码可见 [this.js](./js-to-test/this.js);
+
+
+- `在对象方法里面的this` ---> 指向 `当前对象`;
+> 例子：
+
+```js
+    var point = {
+        x:1,
+        y:1,
+        toIt:function(x,y){
+            this.x = this.x + x;
+            this.y = this.y + y;
+        }
+    }
+    point.toIt(1,1)
+    point.x; // 2
+    point.y; // 2
+``` 
+
+<br>
+- 代码可见 [this_2.js](./js-to-test/this_2.js);
+
+
+- `作为构造函数里面的this`  ----> 使用 `var that = this` 把 `this` 指向 `对象内部`
+> 例子：
+```js
+    var point = {
+        x:1,
+        y:1,
+        moveIt: function(x,y){
+            var that = this;
+            function moveX(x){
+                that.x = that.x + x;
+            }
+            function moveY(y){
+                that.y = that.y + y;
+            }
+            moveX(x);
+            moveY(y);
+        }
+    }
+    point.moveIt(1,1)
+    point.x; // 2
+    point.y; // 2
+```
+
+<br>
+- 代码可见 [this_3.js](./js-to-test/this_3.js);
+
+- `使用 apply 或 call 调用`  --->  指向更换的 `对象` 
+
+- 参考链接 [深入浅出 JavaScript 中的 this](https://www.ibm.com/developerworks/cn/web/1207_wangqf_jsthis/index.html)
+
+
 ##### 参考链接
 - [判断JS数据类型的四种方法](https://www.cnblogs.com/onepixel/p/5126046.html)
 - [不得不说的JavaScript异步加载](https://www.cnblogs.com/zichi/p/4597766.html)
