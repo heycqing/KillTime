@@ -260,7 +260,7 @@ for(var i = 0 ; i< li_.length; i++){
 - `当对象只有一层结构，并没有多层结构时，可以使用 Object.assign() 进行拷贝`
 
 ```js
-    var copyObj = {
+    var copyObj = {
         x:1,
         y:1
     }
