@@ -145,7 +145,7 @@ for(var i = 0 ; i< li_.length; i++){
 
 <br>
 
-- 代码可见 [this.js](./js-to-test/this.js);
+> 代码可见 [this.js](./js-to-test/this.js);
 
 
 - `在对象方法里面的this` ---> 指向 `当前对象`;
@@ -166,7 +166,8 @@ for(var i = 0 ; i< li_.length; i++){
 ``` 
 
 <br>
-- 代码可见 [this_2.js](./js-to-test/this_2.js);
+
+> 代码可见 [this_2.js](./js-to-test/this_2.js);
 
 
 - `作为构造函数里面的this`  ----> 使用 `var that = this` 把 `this` 指向 `对象内部`
@@ -193,12 +194,31 @@ for(var i = 0 ; i< li_.length; i++){
 ```
 
 <br>
-- 代码可见 [this_3.js](./js-to-test/this_3.js);
+
+> 代码可见 [this_3.js](./js-to-test/this_3.js);
 
 - `使用 apply 或 call 调用`  --->  指向更换的 `对象` 
+> 例子：
+```js
+    function Point(x, y){ 
+        this.x = x; 
+        this.y = y; 
+        this.moveTo = function(x, y){ 
+            this.x = x; 
+            this.y = y; 
+        } 
+    } 
+ 
+    var p1 = new Point(0, 0); 
+    var p2 = {x: 0, y: 0}; 
+    p1.moveTo(1, 1); 
+    p1.moveTo.apply(p2, [10, 10]);
+
+```
+
 
 - 参考链接 [深入浅出 JavaScript 中的 this](https://www.ibm.com/developerworks/cn/web/1207_wangqf_jsthis/index.html)
-
+- 参考链接 [Understanding JavaScript Function Invocation and "this"](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)
 
 ##### 参考链接
 - [判断JS数据类型的四种方法](https://www.cnblogs.com/onepixel/p/5126046.html)
