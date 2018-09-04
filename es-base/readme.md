@@ -110,7 +110,7 @@ for(var i = 0 ; i< li_.length; i++){
 
 
 
-### 🍥  偏门的js知识点
+###  🍥  偏门的js知识点
 > 如何让js代码异步加载？(QQ音乐)
 - A:
     + 使用动态创建 `script` 标签；
@@ -123,12 +123,12 @@ for(var i = 0 ; i< li_.length; i++){
     + 可计算某个字符串，并执行其中的的 `JavaScript ` 代码。
     + `eval()` 可以让写在函数里的代码运行在全局作用域中。
 
-### 🍥  使用纯js实现一段HTML代码？（拼多多）
+###   🍥  使用纯js实现一段HTML代码？（拼多多）
 
 
 
 
-### 🍥  this的在javascript中的指向
+###  🍥  this的在javascript中的指向
 - A:
 > 有4种情况关于 `this` 的走向；
 
