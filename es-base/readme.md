@@ -72,7 +72,7 @@
     + 表达式： `Object.prototype.toString.call('') ;   // [object String]`
 
 
-###  js闭包运用
+### 🍥   js闭包运用
 > 题目：现在有个 HTML 片段，要求编写代码，点击编号为几的链接就alert弹出其编号
 - 这里需要使用闭包;
 **这是 `html` 代码**
@@ -110,7 +110,7 @@ for(var i = 0 ; i< li_.length; i++){
 
 
 
-### 偏门的js知识点
+### 🍥  偏门的js知识点
 > 如何让js代码异步加载？(QQ音乐)
 - A:
     + 使用动态创建 `script` 标签；
@@ -123,12 +123,12 @@ for(var i = 0 ; i< li_.length; i++){
     + 可计算某个字符串，并执行其中的的 `JavaScript ` 代码。
     + `eval()` 可以让写在函数里的代码运行在全局作用域中。
 
-#### 使用纯js实现一段HTML代码？（拼多多）
+### 🍥  使用纯js实现一段HTML代码？（拼多多）
 
 
 
 
-#### this的在javascript中的指向
+### 🍥  this的在javascript中的指向
 - A:
 > 有4种情况关于 `this` 的走向；
 
@@ -219,6 +219,29 @@ for(var i = 0 ; i< li_.length; i++){
 
 - 参考链接 [深入浅出 JavaScript 中的 this](https://www.ibm.com/developerworks/cn/web/1207_wangqf_jsthis/index.html)
 - 参考链接 [Understanding JavaScript Function Invocation and "this"](https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)
+
+
+### 🍥 如何实现 javascript 的深拷贝？
+
+- `浅拷贝` ：`拷贝对象` 直接复制 `被拷贝对象` 的 `指针` ，**改变拷贝对象的属性值，会一并改变被拷贝对象的属性值**；
+- `深拷贝` ：`拷贝对象` 彻底复制 `整个旧对象`，**改变新对象的属性值，并不会对被拷贝对象产生影响**；
+
+> 如下图会理解更彻底:
+
+![image](./imgs/deepCopy.png)
+
+<br>
+(图片来自网络)
+
+
+
+
+
+
+- 参考链接 [什么是js深拷贝和浅拷贝及其实现方式?](https://www.haorooms.com/post/js_copy_sq)
+
+
+
 
 ##### 参考链接
 - [判断JS数据类型的四种方法](https://www.cnblogs.com/onepixel/p/5126046.html)
