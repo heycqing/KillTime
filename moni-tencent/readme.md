@@ -96,15 +96,14 @@
 ## 05.jpeg （涉及到网络协议）
 - A:
 - 可见下表（详解）:
-<br>
+
 ![image](./showImgs/threehand.png)
-<br>
+
 > 中间是 `数据传输过程` ;
-<br>
+
 ![image](./showImgs/four.png)
-<br>
+
 > 图片来源于网络
 
-<br>
 > 个人感觉答案是： A B
 
