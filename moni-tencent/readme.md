@@ -111,7 +111,38 @@
 
 ## 06.jpeg (涉及 操作系统内存)
 - A:
+> 详情如下表：
 
+![image](./showImgs/32-64.jpg)
+
+<br>
+
+我这里编写了代码
+```c
+    #include <stdio.h>
+    #include <limits.h>
+    #include <string.h>
+    int main(){
+        char str[][20] = {"hello","tencent"};
+        char *p = str[0];
+        int dim = sizeof(str)/sizeof(str[0]);
+        int **p1;
+        int *p2[10];
+        int (*p3)[10];
+        printf(" %d %lu %lu %lu %lu %lu\n",dim,sizeof(str),strlen(p),sizeof(p1),sizeof(p2),sizeof(p3));
+        return 0;
+    }
+```
+
+- 代码具体[06.c](./c/06.c)
+
+使用了 `命令行` 编译得出编译后的文件是 [a.out](./c/a.out)
+
+<br>
+
+- 使用 `a.out` 文件: 把 `a.out` 放在命令行中直接 `回车` 运行就可以了。
+
+> 答案是：A： 2 40 5 8 80 8
 
 ## 07.jpeg (涉及 js中this指向)
 - A:
