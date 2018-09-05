@@ -93,7 +93,7 @@
 - 参考链接 [DNS分别在什么情况下使用UDP和TCP](https://www.cnblogs.com/549294286/p/5172435.html)
 
 
-## 05.jpeg （涉及到网络协议）
+## 05.jpeg （涉及到 网络协议）
 - A:
 - 可见下表（详解）:
 
@@ -109,3 +109,27 @@
 
 > 个人感觉答案是： A B
 
+## 06.jpeg (涉及 操作系统内存)
+- A:
+
+
+## 07.jpeg (涉及 js中this指向)
+- A:
+
+<br>
+
+图片中的 `this` 指向的是 `window` 的全局变量；
+
+<br>
+
+> 答案是：A
+
+## 08.jpeg (涉及 C++ const关键字的引用)
+> A:
+
+> 这道题，自我感觉不是很好，作为一道底层语言题，对于前端确实是有点难；
+
+-[见issues8](https://github.com/heycqing/KillTime/issues/8)
+
+- 参考链接 关于 `auto` 关键字的 [LESSON #1: ‘AUTO’](https://mbevin.wordpress.com/2012/11/13/auto/)
+- 参考链接 关于 `const` 关键字的 [C/C++中const关键字详解](https://www.cnblogs.com/yc_sunniwell/archive/2010/07/14/1777416.html)

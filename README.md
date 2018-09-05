@@ -15,6 +15,9 @@
 ### 📝 冒泡事件
 - 点击这里跳转[bubble](./bubble/readme.md)
 
+### 📝 本地存储
+- 点击可以看一下我的博客[LocalStorage & SessionStorage](http://wusiqing.com/?p=362)
+
 ### 📝 js一些基础
 - 点击这里跳转[es-base](./es-base/readme.md)
 

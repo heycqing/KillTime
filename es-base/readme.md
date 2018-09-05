@@ -276,6 +276,13 @@ for(var i = 0 ; i< li_.length; i++){
 - 参考链接 [ ES2015系列(二) 理解Object.assign](https://cnodejs.org/topic/56c49662db16d3343df34b13)
 
 
+### js的运行机制 Event Loop
+> A:
+
+- 了解比较少的话，可以参考一下我的博客[📖 javascript的运行机制 Event loop](http://wusiqing.com/?p=328)
+
+> 多是以代码运行题出现
+
 ### 
 
 
