@@ -133,3 +133,12 @@
 
 - 参考链接 关于 `auto` 关键字的 [LESSON #1: ‘AUTO’](https://mbevin.wordpress.com/2012/11/13/auto/)
 - 参考链接 关于 `const` 关键字的 [C/C++中const关键字详解](https://www.cnblogs.com/yc_sunniwell/archive/2010/07/14/1777416.html)
+
+
+## 09.jpeg (涉及数据结构)
+> A:
+
+> 如下表详情：
+
+![image](./showImgs/dataStruction.png)
+
