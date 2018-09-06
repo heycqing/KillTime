@@ -47,7 +47,7 @@
 - 点击这里跳转[here](./moni-exam/moni-tencent/readme.md)
 
 ### 🐝 jindong前端笔试题 （这里只记录错题部分）
-- 点击这里跳转 [京东一下][./moni-exam/moni-jindong/readme.md]
+- 点击这里跳转 [京东一下](./moni-exam/moni-jindong/readme.md)
 
 
 --------------
