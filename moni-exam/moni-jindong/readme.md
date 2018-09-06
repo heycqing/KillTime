@@ -162,7 +162,7 @@
 ###  🌷 关于 浏览器本地存储
 > 试题如下：
 
-![image](./jindong-imgs/06.png)
+![image](./jindong-imgs/07.png)
 
 > 解析：
 这里应该是 `sessionstorage` , 如果是 `session` 的话后端也是有这个 `关键字`;
