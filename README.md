@@ -58,7 +58,8 @@
 ### 🍴 关于 jsdoc 的使用
 - 点击这里跳转 [jsdoc](./jsdoc/readme.md)
 
-
+### 🍒 业界有用成熟的js框架
+- [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript#sliders)
 
 
 #### 温馨提示
