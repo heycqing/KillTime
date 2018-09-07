@@ -12,28 +12,34 @@
 function add(items){
     var html = '';
     var tbody_ = document.getElementsByTagName('tbody')[0];
-    var tfooter_ = document.getElementsByTagName('tfooter')[0];
-    // 计算 总价格
-    var total = '';
-    console.log(tbody_)
-   
+    var tfoot_ = document.getElementsByTagName('tfoot')[0]; 
     for(var i in items){
         var tr_ = document.createElement('tr');  
+
         // 转换 Number 数据类型，保留2位小数  
         var fix2 =  items[i].price;
         var num_price = new Number(fix2)   
 
-        html = ' <tr><td>'+items[i].name+'</td><td>'+num_price.toFixed(2)+'</td><td><a href="javascript:void(0);">删除</a></td></tr>'
+        html = '<tr><td>'+items[i].name+'</td><td>'+num_price.toFixed(2)+'</td><td><a href="javascript:void(0);">删除</a></td></tr>';
+
         tr_.innerHTML = html;
         tbody_.appendChild(tr_);
     }
     
-    // for(var i  in tbody_.rows){
-    //     console.log(tbody_.rows[i].childNodes[1].textContent)
-    // }
-    // tfooter_.innerHTML = '<tr><th>总计</th><td colspan="2">'+total+'('+tbody_.childElementCount+'件商品)</td></tr>';
+    tfoot_.innerHTML = '<tr><th>总计</th><td colspan="2">'+total_(tbody_)+'('+tbody_.childElementCount+'件商品)</td></tr>';
     
 }
+
+function total_(ele){
+    var total = '';
+    for(var i  in ele.childdren){
+        // console.log(tbody_.rows[i].childNodes[1].textContent);
+        total += ele.childdren[i].childdren[1].textContent; 
+    }
+    console.log('total:'+total)
+    return total;
+}
+
 
 var a =[{
     name:'we',
