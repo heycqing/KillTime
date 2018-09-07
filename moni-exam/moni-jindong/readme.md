@@ -1,6 +1,6 @@
 ##  🐝 京东 错题系列
 
-### 🌷 关于 vue
+###  关于vue
 
 > 试题如下：
 
@@ -167,8 +167,136 @@
 > 解析：
 这里应该是 `sessionstorage` , 如果是 `session` 的话后端也是有这个 `关键字`;
 
+<br>
+
+### 关于在线编程题
+
+> 试题如下：
+
+![image](./jingdong-code/last-code/last-code.jpeg)
+
+<br>
+```html
+      <table id="jsTrolley">
+        <thead><tr><th>名称</th><th>价格</th><th>操作</th></tr></thead>
+        <tbody>
+            <tr><td>产品1</td><td>10.00</td><td><a href="javascript:void(0);">删除</a></td></tr>
+            <tr><td>产品2</td><td>30.20</td><td><a href="javascript:void(0);">删除</a></td></tr>
+            <tr><td>产品3</td><td>20.50</td><td><a href="javascript:void(0);">删除</a></td></tr>
+        </tbody>
+        <tfoot><tr><th>总计</th><td colspan="2">60.70(3件商品)</td></tr></tfoot>
+    </table>
+```
+<br>
+```css
+    body,html{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+    }
+    thead{
+        background: #3d444c;
+        color: #ffffff;
+    }
+    td,th{
+        border: 1px solid #e1e1e1;
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+}
+```
+<br>
+
+> 这是要补全的代码； 
+- 分了两部分
+    + [add 函数](#add函数)
+    + [bind 函数](#bind函数)
+
+#### add函数    
+
+##### 第一种方法：
+
+> 推荐第一种方法：
+
+```js
+    /** 
+     *  核心：
+     * 使用字符串形式的函数:
+    1. 获取父元素节点；
+    2. 创造新的 tr 节点；
+    3. 把字符串放进 tr 节点里面；
+    4. 把 tr 节点放进 tbody_的 appendChild() 里面；
+    5. 循环遍历上诉操作 
+    比较推荐这种；
+                    **/
+    function add(items){
+        var html = '';
+        var tbody_ = document.getElementsByTagName('tbody')[0];
+        for(var i in items){
+        var tr_ = document.createElement('tr');    
+        // 转换 Number 数据类型，保留2位小数
+        var fix2 =  items[i].price;
+        var num_price = new Number(fix2);   
+        
+        html = ' <tr><td>'+items[i].name+'</td><td>'+num_price.toFixed(2)+'</td><td><a href="javascript:void(0);">删除</a></td></tr>'
+        tr_.innerHTML = html;
+        tbody_.appendChild(tr_);
+    }
+        
+    }
+```
+
+##### 第二种方法：
+
+> 和拼多多的用 `纯js` 的考查是一样的
+
+```js
+    /**
+     *  纯js写的
+     */
+    function add(items) {
+        var html = '';
+        var tbody_ = document.getElementsByTagName('tbody')[0];
+        for(var i in items){
+            var tr_ = document.createElement('tr');
+            var td_1 = document.createElement('td');
+            var td_2 = document.createElement('td');
+            var td_3 = document.createElement('td');
+            var a_ = document.createElement('a');
+            td_1.innerText = items[i].name;
+
+            var fix2 =  items[i].price;
+            var num_price = new Number(fix2)   
+            td_2.innerText = num_price.toFixed(2);
+
+            a_.setAttribute('href','javascript:void(0);');
+            a_.innerText='删除';
+            tr_.appendChild(td_1);
+            tr_.appendChild(td_2);
+            td_3.appendChild(a_);
+            tr_.appendChild(td_3);
+            tbody_.appendChild(tr_)
+        }
+    }
+
+```
+
+> 这里主要考查操作DOM，是必要的知识点，同时考验熟练度。
+
+- 关于纯js操作DOM，可以参考[我的一篇文章](http://wusiqing.com/?p=337)
+
+#### bind函数  
 
 
+
+<br>
 
 - 返回 [首页目录](../../README.md)
 

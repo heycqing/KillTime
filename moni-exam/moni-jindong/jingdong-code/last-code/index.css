@@ -1,0 +1,22 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+thead{
+    background: #3d444c;
+    color: #ffffff;
+}
+td,th{
+    border: 1px solid #e1e1e1;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
