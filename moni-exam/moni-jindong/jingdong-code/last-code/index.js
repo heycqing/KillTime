@@ -11,33 +11,32 @@
 //      保留2位小数点，里面还有精度计算。
 function add(items){
     var html = '';
+    var total_price  = 0;
     var tbody_ = document.getElementsByTagName('tbody')[0];
     var tfoot_ = document.getElementsByTagName('tfoot')[0]; 
+
+    console.log('1:total     '+ total_price)
+
     for(var i in items){
         var tr_ = document.createElement('tr');  
 
         // 转换 Number 数据类型，保留2位小数  
         var fix2 =  items[i].price;
-        var num_price = new Number(fix2)   
-
+        var num_price = new Number(fix2)  ;
+        total_price += Math.round(num_price * 100)/100
         html = '<tr><td>'+items[i].name+'</td><td>'+num_price.toFixed(2)+'</td><td><a href="javascript:void(0);">删除</a></td></tr>';
 
         tr_.innerHTML = html;
         tbody_.appendChild(tr_);
     }
-    
-    tfoot_.innerHTML = '<tr><th>总计</th><td colspan="2">'+total_(tbody_)+'('+tbody_.childElementCount+'件商品)</td></tr>';
-    
-}
+    for(var i  in tbody_.children){
+        total_price += tbody_.children[i].children[1].textContent; 
+        console.log('1:\t'+total_price)
 
-function total_(ele){
-    var total = '';
-    for(var i  in ele.childdren){
-        // console.log(tbody_.rows[i].childNodes[1].textContent);
-        total += ele.childdren[i].childdren[1].textContent; 
     }
-    console.log('total:'+total)
-    return total;
+    console.log('2:total     '+ total_price)
+    tfoot_.innerHTML = '<tr><th>总计</th><td colspan="2">'+total_price+'('+tbody_.childElementCount+'件商品)</td></tr>';
+    
 }
 
 
