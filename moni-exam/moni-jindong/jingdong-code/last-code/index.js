@@ -60,7 +60,7 @@ function bind() {
     var tfoot_ = document.getElementsByTagName('tfoot')[0]; 
 
     var total_count = delete_.childElementCount;
-    for(var i =0 ; i <  delete_.children.length ; i++){
+    for(var i =0 ; i <  total_count ; i++){
         
         delete_.children[i].childNodes[2].addEventListener('click',function(i){
             return function(){
@@ -73,7 +73,7 @@ function bind() {
 
                 // delete_.deleteRow(i);
                 delete_.removeChild(delete_.childNodes[i])
-            
+                console.log('i:'+i)
                 total_count --;
                 tfoot_.innerHTML = '<tr><th>总计</th><td colspan="2">'+00+'('+total_count+'件商品)</td></tr>';
 
