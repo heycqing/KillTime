@@ -64,14 +64,6 @@ function bind() {
         
         delete_.children[i].childNodes[2].addEventListener('click',function(i){
             return function(){
-           
-
-                // var delete_price = delete_.childNodes[i].children[1].innerText;
-                // delete_ = Number(delete_price);
-                // console.log('减去的价格：'+delete_price)
-
-
-                // delete_.deleteRow(i);
                 delete_.removeChild(delete_.childNodes[i])
                 console.log('i:'+i)
                 total_count --;
@@ -79,6 +71,14 @@ function bind() {
 
             }
         }(i))
-    }
+    } 
   
 }
+
+
+                // var delete_price = delete_.childNodes[i].children[1].innerText;
+                // delete_ = Number(delete_price);
+                // console.log('减去的价格：'+delete_price)
+
+
+                // delete_.deleteRow(i);
