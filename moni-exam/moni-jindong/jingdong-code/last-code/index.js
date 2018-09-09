@@ -15,11 +15,8 @@ function add(items){
     var tbody_ = document.getElementsByTagName('tbody')[0];
     var tfoot_ = document.getElementsByTagName('tfoot')[0]; 
 
-    console.log('1:total     '+ total_price)
-
     for(var i in items){
         var tr_ = document.createElement('tr');  
-
         // 转换 Number 数据类型，保留2位小数  
         var fix2 =  items[i].price;
         var num_price = new Number(fix2);
@@ -28,19 +25,18 @@ function add(items){
         tr_.innerHTML = html;
         tbody_.appendChild(tr_);
     }
-    for(var i  in tbody_.rows){
-        
-        var temp = tbody_.rows[i].cells[1].innerText; 
-    
+    for(var i = 0 ;  i < tbody_.children.length ; i++){
+        var temp = tbody_.children[i].childNodes[1].textContent; 
         temp = Number(temp);
         total_price +=  temp;
-        console.log('1:\t'+total_price)
-      
-        
     }
-    console.log('2:total     '+ total_price)
+    // 去除 空节点
+    for(var i = 0 ; i < tbody_.childNodes.length;i++){
+        if(tbody_.childNodes[i].nodeName === '#text'){
+            tbody_.removeChild(tbody_.childNodes[i]);
+        }
+    }
     tfoot_.innerHTML = '<tr><th>总计</th><td colspan="2">'+total_price+'('+tbody_.childElementCount+'件商品)</td></tr>';
-    
 }
 
 
@@ -55,15 +51,34 @@ var a =[{
     price:'123.55612'
 }]
 window.onload=function(){
-    add(a)
-
+    add(a);
+    bind();
 }
 
 function bind() {
-    var delete_ = document.getElementsByTagName('tbody');
-    delete_.addEventlisten('click',function(){
-        return function(){
+    var delete_ = document.getElementsByTagName('tbody')[0];
+    var tfoot_ = document.getElementsByTagName('tfoot')[0]; 
+
+    var total_count = delete_.childElementCount;
+    for(var i =0 ; i <  delete_.children.length ; i++){
+        
+        delete_.children[i].childNodes[2].addEventListener('click',function(i){
+            return function(){
+           
+
+                // var delete_price = delete_.childNodes[i].children[1].innerText;
+                // delete_ = Number(delete_price);
+                // console.log('减去的价格：'+delete_price)
+
+
+                // delete_.deleteRow(i);
+                delete_.removeChild(delete_.childNodes[i])
             
-        }
-    }(i))
+                total_count --;
+                tfoot_.innerHTML = '<tr><th>总计</th><td colspan="2">'+00+'('+total_count+'件商品)</td></tr>';
+
+            }
+        }(i))
+    }
+  
 }
