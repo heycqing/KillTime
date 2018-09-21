@@ -21,6 +21,9 @@
 ### 📝 js一些基础
 - 点击这里跳转[es-base](./es-base/readme.md)
 
+###  📝 深入js
+- [构建 `javascript` 事件系统](./js-event/readme.mds)
+
 ### 📝 css一些基础
 - 点击这里跳转[css-base](./css-base/readme.md)
 
