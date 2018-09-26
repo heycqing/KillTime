@@ -1,5 +1,6 @@
 ## 学习 vue 内部机制的解析
 
+
 ### 1.响应式系统的原理
 
 > 这里主要是使用了js object对象的方法 defineProperty 
