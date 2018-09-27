@@ -8,7 +8,7 @@ class Dep{
     constructor(){
         this.subs = [];
     }    
-    // 添加到中转站缓存s
+    // 添加到中转站缓存
     addSub(sub){
         this.subs.push(sub)
     }
