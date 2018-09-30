@@ -77,6 +77,30 @@ JavaScript数字类型采用IEEE754标准定义的64位浮点数表示数字
     + 表达式： `Object.prototype.toString.call('') ;   // [object String]`
 
 
+### js中的对象：
+
+> JS中，可以将对象分为“内部对象”、“宿主对象”和“自定义对象”三种。
+1. 内部对象
+
+    js中的内部对象包括`Array、Boolean、Date、Function、Global、Math、Number、Object、RegExp、String`以及各种错误类对象，包括`Error、EvalError、RangeError、ReferenceError、SyntaxError和TypeError`。
+    其中 `Global` 和 `Math` 这两个对象又被称为“内置对象”，这两个对象在脚本程序初始化时被创建，不必实例化这两个对象。
+
+2. 宿主对象
+
+    宿主对象就是执行 `JS脚本` 的环境提供的对象。对于嵌入到网页中的JS来说，其宿主对象就是浏览器提供的对象，所以又称为浏览器对象，如`IE、Firefox` 等浏览器提供的对象。不同的浏览器提供的宿主对象可能不同，即使提供的对象相同，其实现方式也大相径庭！这会带来浏览器兼容问题，增加开发难度。
+    浏览器对象有很多，如` Window ` 和 `Documen` ，`Element` ，`form` ，`image` ，等等。
+
+3. 自定义对象
+
+    顾名思义，就是开发人员自己定义的对象。`JS`  允许使用自定义对象，使JS应用及功能得到扩充
+
+
+### 类型转换
+
+![image](./imgs/WechatIMG1.png)
+
+
+
 ### 🍥   js闭包运用
 > 题目：现在有个 HTML 片段，要求编写代码，点击编号为几的链接就alert弹出其编号
 - 这里需要使用闭包;
@@ -293,9 +317,6 @@ for(var i = 0 ; i< li_.length; i++){
 - 了解比较少的话，可以参考一下我的博客[📖 javascript的运行机制 Event loop](http://wusiqing.com/?p=328)
 
 > 多是以代码运行题出现
-
-### 
-
 
 
 
