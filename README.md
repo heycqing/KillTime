@@ -37,7 +37,7 @@
 - 点击这里跳转[css布局](./sides/readme.md)
 
 ###  📝 css动画
-- 点击这里跳转[css动画](./css-anmi/readme.md)
+- 点击这里跳转[css动画](./css-anim/readme.md)
 
 ### 📝 有关js主流框架的一些知识
 - 点击这里跳转[vue\reast\angular](./font-end-ifarem/readme.md)
