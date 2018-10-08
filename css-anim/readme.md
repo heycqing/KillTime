@@ -45,7 +45,10 @@
 
 
 #### 参考链接
+> 入门级
 - [CSS动画简介](http://www.ruanyifeng.com/blog/2014/02/css_transition_and_animation.html)
+> 进阶级
+- [CSS3动画实践](https://aotu.io/notes/2016/01/04/css3-animation/index.html)
 
 #### css 动画工具
 - [transition delay的工具](http://cubic-bezier.com/#0,.71,1,.2s)
