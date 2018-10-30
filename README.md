@@ -76,6 +76,12 @@
 - [Awesome JavaScript](https://github.com/sorrycc/awesome-javascript#sliders)
 
 
+-------------- 
+
+>  这是分割线，北理珠前端社区群。能自学有兴趣的进。
+
+![image](./readme-imgs/1.jpeg);
+
 #### 温馨提示
 - ⭐️ `star` 是方便你收藏在你自己的收藏夹里，方便你来回顾一些你喜欢的、感兴趣的github仓库；
 - 👀 `watch` ，如果你 `watch` 了项目的话，只要项目提交了 `commit` 或者 `issues` 的话，你都会接收到通知；
