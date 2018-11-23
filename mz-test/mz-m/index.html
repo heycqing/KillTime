@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id='div_' style='height:1900px;width:400px;background-color:#333'></div>
+  
+
+    <script src="https://cdn.bootcss.com/zepto/1.1.5/zepto.min.js"></script>
+    <script>
+        console.log($(document))
+        console.log($())
+        $(document).on('swipe',function(){
+            console.log('上滑')
+        })
+
+document.addEventListener('touchmove',function(event) {
+    if (event.cancelable) {
+        // 判断默认行为是否已经被禁用
+        if (!event.defaultPrevented) {
+            event.preventDefault();
+        }
+    }
+})
+        
+    </script>
+</body>
+</html>
